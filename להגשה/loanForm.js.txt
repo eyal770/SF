@@ -55,6 +55,11 @@ export default class LoanForm extends LightningElement {
                 loanAmount: this.loanAmount,
                 loanStatus: this.loanStatus
             });
+
+            // (Optional) Clear form
+            // this.customerName = '';
+            // this.loanAmount = null;
+            // this.loanStatus = 'Pending';
         } catch (e) {
             this.errorMessage = e?.body?.message || e.message || 'Unknown error';
         } finally {
