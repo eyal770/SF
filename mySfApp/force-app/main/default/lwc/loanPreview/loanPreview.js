@@ -48,7 +48,7 @@ export default class LoanPreview extends LightningElement {
             // 2) Authoritative refresh from server
             const fresh = await getLoanRequestById({ loanRequestId: message.loanRequestId });
             this.loan = fresh;
-            this.customerName = fresh?.Customer__r?.FullName__c || this.customerName;
+            this.customerName = fresh?.Customer__r?.Name || this.customerName;
         } catch (e) {
             this.errorMessage = e?.body?.message || e.message || 'Failed to load loan request.';
         } finally {

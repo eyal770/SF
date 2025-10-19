@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Event fired when a Loan Request is approved</description>
+    <eventType>HighVolume</eventType>
+    <label>Loan Request Approved Event</label>
+    <pluralLabel>Loan Request Approved Events</pluralLabel>
+
+    <fields>
+        <fullName>CustomerId__c</fullName>
+        <label>Customer Id</label>
+        <type>Text</type>
+        <length>18</length>
+    </fields>
+    <fields>
+        <fullName>LoanRequestId__c</fullName>
+        <label>Loan Request Id</label>
+        <type>Text</type>
+        <length>18</length>
+    </fields>
+    <fields>
+        <fullName>CustomerEmail__c</fullName>
+        <label>Customer Email</label>
+        <type>Text</type>
+        <length>255</length>
+    </fields>
+    <fields>
+        <fullName>CustomerName__c</fullName>
+        <label>Customer Name</label>
+        <type>Text</type>
+        <length>255</length>
+    </fields>
+</CustomObject>
